@@ -1,0 +1,136 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do gerador_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/divisor_de_frequencia {D:/Woyakewicz/inversor_de_frequencia/PWM/files/divisor_de_frequencia/clock_divisor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:39 on Aug 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/divisor_de_frequencia" D:/Woyakewicz/inversor_de_frequencia/PWM/files/divisor_de_frequencia/clock_divisor.v 
+# -- Compiling module clock_divisor
+# 
+# Top level modules:
+# 	clock_divisor
+# End time: 19:59:39 on Aug 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia {D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:39 on Aug 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia" D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v 
+# -- Compiling module senoid
+# 
+# Top level modules:
+# 	senoid
+# End time: 19:59:39 on Aug 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia {D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:39 on Aug 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia" D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v 
+# -- Compiling module gerador
+# 
+# Top level modules:
+# 	gerador
+# End time: 19:59:39 on Aug 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia {D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/PLL_27MHz.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:39 on Aug 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia" D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/PLL_27MHz.v 
+# -- Compiling module PLL_27MHz
+# 
+# Top level modules:
+# 	PLL_27MHz
+# End time: 19:59:39 on Aug 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/db {D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/db/pll_27mhz_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:39 on Aug 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/db" D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/db/pll_27mhz_altpll.v 
+# -- Compiling module PLL_27MHz_altpll
+# 
+# Top level modules:
+# 	PLL_27MHz_altpll
+# End time: 19:59:39 on Aug 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia {D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:39 on Aug 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia" D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador_tb.v 
+# -- Compiling module gerador_tb
+# 
+# Top level modules:
+# 	gerador_tb
+# End time: 19:59:39 on Aug 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  gerador_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" gerador_tb 
+# Start time: 19:59:40 on Aug 26,2019
+# Loading work.gerador_tb
+# Loading work.gerador
+# Loading work.PLL_27MHz
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.clock_divisor
+# Loading work.senoid
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador_tb.v(20): [PCDPC] - Port size (12) does not match connection size (1) for port 'referencia'. The port definition is at: D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /gerador_tb/gerador File: D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v
+# ** Warning: (vsim-3015) D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v(48): [PCDPC] - Port size (16) does not match connection size (12) for port 'q'. The port definition is at: D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v(42).
+#    Time: 0 ps  Iteration: 0  Instance: /gerador_tb/gerador/senoid_60Hz File: D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v
+# 
+# do D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/simulation/modelsim/wave.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate /gerador_tb/clk
+# add wave -noupdate /gerador_tb/rst
+# add wave -noupdate /gerador_tb/referencia
+# add wave -noupdate -expand -group gerador /gerador_tb/gerador/clk_50
+# add wave -noupdate -expand -group gerador /gerador_tb/gerador/rst
+# add wave -noupdate -expand -group gerador /gerador_tb/gerador/referencia
+# add wave -noupdate -expand -group gerador /gerador_tb/gerador/clk_27M
+# add wave -noupdate -expand -group gerador /gerador_tb/gerador/clk_18k
+# add wave -noupdate -expand -group gerador /gerador_tb/gerador/counter
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {430 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 150
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {0 ps} {2097152 ns}
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: gerador_tb.gerador.PLL27MHz.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 380000  Instance: gerador_tb.gerador.PLL27MHz.altpll_component.cycloneiii_pll.pll3
+# Break key hit
+# Simulation stop requested.
+# End time: 20:08:30 on Aug 26,2019, Elapsed time: 0:08:50
+# Errors: 0, Warnings: 2

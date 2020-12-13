@@ -1,0 +1,159 @@
+Flow report for DE2_115
+Sat Dec 12 20:45:37 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sat Dec 12 20:45:37 2020       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; DE2_115                                     ;
+; Top-level Entity Name              ; DE2_115                                     ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 118 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 114 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 55 / 114,480 ( < 1 % )                      ;
+; Total registers                    ; 55                                          ;
+; Total pins                         ; 32 / 529 ( 6 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 6,144 / 3,981,312 ( < 1 % )                 ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/12/2020 20:44:57 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; DE2_115             ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                       ;
++----------------------------------------+----------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                        ; Value                                        ; Default Value ; Entity Name ; Section Id       ;
++----------------------------------------+----------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID                  ; 244789085861419.160781669705560              ; --            ; --          ; --               ;
+; EDA_DESIGN_INSTANCE_NAME               ; NA                                           ; --            ; --          ; DPLL_test_top_tb ;
+; EDA_DESIGN_INSTANCE_NAME               ; NA                                           ; --            ; --          ; Mux_Invert_TB    ;
+; EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT ; simulation/modelsim/wave_mux.do              ; --            ; --          ; eda_simulation   ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH   ; Mux_Invert_TB                                ; --            ; --          ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT                 ; Vhdl                                         ; --            ; --          ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                    ; ModelSim-Altera (VHDL)                       ; <None>        ; --          ; --               ;
+; EDA_TEST_BENCH_ENABLE_STATUS           ; TEST_BENCH_MODE                              ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_FILE                    ; ZEDTCV_CyIII/DPLL_block/DPLL_test_top_tb.v   ; --            ; --          ; DPLL_test_top_tb ;
+; EDA_TEST_BENCH_FILE                    ; ZEDTCV_CyIII/TIE_block/Mux_Invert_TB.v       ; --            ; --          ; Mux_Invert_TB    ;
+; EDA_TEST_BENCH_MODULE_NAME             ; DPLL_test_top_tb                             ; --            ; --          ; DPLL_test_top_tb ;
+; EDA_TEST_BENCH_MODULE_NAME             ; Mux_Invert_TB                                ; --            ; --          ; Mux_Invert_TB    ;
+; EDA_TEST_BENCH_NAME                    ; DPLL_test_top_tb                             ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                    ; Mux_Invert_TB                                ; --            ; --          ; eda_simulation   ;
+; MAX_CORE_JUNCTION_TEMP                 ; 85                                           ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP                 ; 0                                            ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/PLL/PLL27MHz_inst.v                    ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/PLL/PLL27MHz_bb.v                      ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/PLL/PLL27MHz.cmp                       ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/PLL/PLL27MHz.ppf                       ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/senoid_inst.v    ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/senoid_bb.v      ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/senoid.cmp       ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/senoid_syn.v     ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/PLL18KHz_inst.v  ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/PLL18KHz_bb.v    ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/PLL18KHz.cmp     ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/PLL18KHz.ppf     ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/PLL_27MHz_inst.v ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/PLL_27MHz_bb.v   ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/PLL_27MHz.cmp    ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/gerador_de_referencia/PLL_27MHz.ppf    ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/comparador/comparador_inst.v           ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/comparador/comparador_bb.v             ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/comparador/comparador.cmp              ; --            ; --          ; --               ;
+; MISC_FILE                              ; files/comparador/comparador_syn.v            ; --            ; --          ; --               ;
+; PARTITION_COLOR                        ; -- (Not supported for targeted family)       ; --            ; --          ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL    ; -- (Not supported for targeted family)       ; --            ; --          ; Top              ;
+; PARTITION_NETLIST_TYPE                 ; -- (Not supported for targeted family)       ; --            ; --          ; Top              ;
+; POWER_BOARD_THERMAL_MODEL              ; None (CONSERVATIVE)                          ; --            ; --          ; --               ;
+; POWER_PRESET_COOLING_SOLUTION          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW        ; --            ; --          ; --               ;
++----------------------------------------+----------------------------------------------+---------------+-------------+------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4808 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:14     ; 1.0                     ; 5838 MB             ; 00:00:20                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4690 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4871 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4657 MB             ; 00:00:02                           ;
+; Total                ; 00:00:35     ; --                      ; --                  ; 00:00:48                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-J1MHNGU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-J1MHNGU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-J1MHNGU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-J1MHNGU  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-J1MHNGU  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off DE2_115 -c DE2_115
+quartus_fit --read_settings_files=off --write_settings_files=off DE2_115 -c DE2_115
+quartus_asm --read_settings_files=off --write_settings_files=off DE2_115 -c DE2_115
+quartus_sta DE2_115 -c DE2_115
+quartus_eda --read_settings_files=off --write_settings_files=off DE2_115 -c DE2_115
+
+
+

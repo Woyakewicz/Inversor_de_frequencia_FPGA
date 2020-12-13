@@ -1,0 +1,39 @@
+module gerador 
+		#(
+			parameter MAX = 299,
+			
+		)
+									
+	(
+		input clk_50,
+		input rst,
+		
+		output [11:0] referencia
+	);
+
+	
+	wire clk_18K;
+	PLL_18K PLL18Khz (
+		.inclk0(clk_50),   //  refclk.clk
+		.areset(rst),      //   reset.reset
+		.c0(clk_18K), // outclk0.clk
+		.locked()    //  locked.export
+	);
+	
+	//contador 
+	  always @(posedge clk_18K)
+    if (counter == MAX)
+      counter <= 1'b0;
+    else 
+      counter <= counter + 1;
+
+
+
+
+	senoid_60Hz senoid (
+		.address(counter),
+		.clock(clk_50),
+		q(referencia)
+	);
+
+	

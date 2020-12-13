@@ -1,0 +1,23 @@
+`timescale 1ns / 1ps
+// gera os clocks para test bench e grava a saida
+
+module gerador_tb (
+);
+
+	reg clk, rst;
+	reg n_first;
+	integer f1, f2, f3, f4;
+	initial 
+	begin
+		clk = 0;
+		rst = 1;
+
+
+		#193;
+		rst = 0;
+	end
+	
+	always #20 clk = ~clk;
+
+	endmodule
+	

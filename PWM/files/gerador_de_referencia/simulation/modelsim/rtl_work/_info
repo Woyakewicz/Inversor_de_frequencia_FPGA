@@ -1,0 +1,144 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/simulation/modelsim
+vclock_divisor
+Z1 !s110 1566860379
+!i10b 1
+!s100 `GUV=RKL?EndTV6Pke81>2
+IL<=ZIXSkG334A^ULP2Oh:0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1564537318
+8D:/Woyakewicz/inversor_de_frequencia/PWM/files/divisor_de_frequencia/clock_divisor.v
+FD:/Woyakewicz/inversor_de_frequencia/PWM/files/divisor_de_frequencia/clock_divisor.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1566860379.000000
+!s107 D:/Woyakewicz/inversor_de_frequencia/PWM/files/divisor_de_frequencia/clock_divisor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/divisor_de_frequencia|D:/Woyakewicz/inversor_de_frequencia/PWM/files/divisor_de_frequencia/clock_divisor.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/divisor_de_frequencia
+Z6 tCvgOpt 0
+vgerador
+R1
+!i10b 1
+!s100 T?VEjEGNhA]]`^1eP8G9^3
+ITn][?LAOgdeCdULe`YH;l3
+R2
+R0
+w1566858945
+8D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v
+FD:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia|D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v|
+!i113 1
+R5
+Z7 !s92 -vlog01compat -work work +incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia
+R6
+vgerador_tb
+R1
+!i10b 1
+!s100 SIzYiG@oFGMFHVUNf9>PM1
+Ia_nC<SmgS:61Y6VR4D?@S3
+R2
+R0
+w1566853568
+8D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador_tb.v
+FD:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia|D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador_tb.v|
+!i113 1
+R5
+R7
+R6
+vPLL_27MHz
+R1
+!i10b 1
+!s100 aWb0QFAC7d6G:a8Ab@h2b1
+IF@mW`P`F28f^mlV[[E>TW3
+R2
+R0
+w1566859231
+8D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/PLL_27MHz.v
+FD:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/PLL_27MHz.v
+Z8 L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/PLL_27MHz.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia|D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/PLL_27MHz.v|
+!i113 1
+R5
+R7
+R6
+n@p@l@l_27@m@hz
+vPLL_27MHz_altpll
+R1
+!i10b 1
+!s100 nk;XkzbJjQaeh?_N?BZ]W3
+I`oi97z08Hca:_6VEo[zTB1
+R2
+R0
+w1566855433
+8D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/db/pll_27mhz_altpll.v
+FD:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/db/pll_27mhz_altpll.v
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/db/pll_27mhz_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/db|D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/db/pll_27mhz_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/db
+R6
+n@p@l@l_27@m@hz_altpll
+vsenoid
+R1
+!i10b 1
+!s100 5OC<Hjk6ka@6j7llEV;FR2
+Iaj5cP2@g628FUcecnTei20
+R2
+R0
+w1566859205
+8D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v
+FD:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v
+R8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia|D:/Woyakewicz/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v|
+!i113 1
+R5
+R7
+R6

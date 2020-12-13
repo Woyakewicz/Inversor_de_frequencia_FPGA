@@ -1,0 +1,27 @@
+`timescale 1ns / 1ps
+// gera os clocks para test bench e grava a saida
+
+module controlador_PWM_tb (
+);
+
+	reg clk;
+	initial 
+	begin
+		clk = 0;
+
+		#193;
+		rst = 0;
+	end
+	
+	always #20 clk = ~clk;
+
+	controlador_PWM controlador_PWM 
+	(
+		.clk_50(clk),
+		
+		.driver_1(driver_1)
+		.driver_2(driver_2)
+	);
+	
+endmodule
+	

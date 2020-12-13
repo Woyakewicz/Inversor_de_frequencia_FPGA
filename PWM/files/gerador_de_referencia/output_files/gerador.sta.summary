@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock_divisor:divisor|clk_out_reg'
+Slack : -1.588
+TNS   : -9.602
+
+Type  : Slow 1200mV 85C Model Setup 'PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.669
+TNS   : -0.669
+
+Type  : Slow 1200mV 85C Model Setup 'clk_50'
+Slack : -0.564
+TNS   : -0.564
+
+Type  : Slow 1200mV 85C Model Hold 'PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.219
+TNS   : -0.219
+
+Type  : Slow 1200mV 85C Model Hold 'clock_divisor:divisor|clk_out_reg'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_50'
+Slack : 0.894
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_divisor:divisor|clk_out_reg'
+Slack : -1.285
+TNS   : -11.565
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50'
+Slack : 9.633
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 18.229
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clock_divisor:divisor|clk_out_reg'
+Slack : -1.322
+TNS   : -7.712
+
+Type  : Slow 1200mV 0C Model Setup 'PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.492
+TNS   : -0.492
+
+Type  : Slow 1200mV 0C Model Setup 'clk_50'
+Slack : -0.429
+TNS   : -0.429
+
+Type  : Slow 1200mV 0C Model Hold 'PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.321
+TNS   : -0.321
+
+Type  : Slow 1200mV 0C Model Hold 'clock_divisor:divisor|clk_out_reg'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_50'
+Slack : 0.786
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_divisor:divisor|clk_out_reg'
+Slack : -1.285
+TNS   : -11.565
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : 9.651
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 18.230
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.413
+TNS   : -0.413
+
+Type  : Fast 1200mV 0C Model Setup 'clock_divisor:divisor|clk_out_reg'
+Slack : -0.260
+TNS   : -0.625
+
+Type  : Fast 1200mV 0C Model Setup 'clk_50'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.134
+TNS   : -0.134
+
+Type  : Fast 1200mV 0C Model Hold 'clock_divisor:divisor|clk_out_reg'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_50'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_divisor:divisor|clk_out_reg'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : 9.375
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 18.299
+TNS   : 0.000
+
+------------------------------------------------------------

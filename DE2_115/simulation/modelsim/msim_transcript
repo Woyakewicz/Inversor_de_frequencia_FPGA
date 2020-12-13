@@ -1,0 +1,116 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do DE2_115_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files {D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/PWM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:05 on Dec 12,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files" D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/PWM.v 
+# -- Compiling module PWM
+# 
+# Top level modules:
+# 	PWM
+# End time: 20:25:05 on Dec 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files {D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/portadora.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:05 on Dec 12,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files" D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/portadora.v 
+# -- Compiling module portadora
+# 
+# Top level modules:
+# 	portadora
+# End time: 20:25:05 on Dec 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/top {D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/top/controlador_PWM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:05 on Dec 12,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/top" D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/top/controlador_PWM.v 
+# -- Compiling module controlador_PWM
+# 
+# Top level modules:
+# 	controlador_PWM
+# End time: 20:25:05 on Dec 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia {D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/senoid.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:06 on Dec 12,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia" D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/senoid.v 
+# -- Compiling module senoid
+# 
+# Top level modules:
+# 	senoid
+# End time: 20:25:06 on Dec 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia {D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/PLL_27MHz.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:06 on Dec 12,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia" D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/PLL_27MHz.v 
+# -- Compiling module PLL_27MHz
+# 
+# Top level modules:
+# 	PLL_27MHz
+# End time: 20:25:06 on Dec 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia {D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/gerador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:06 on Dec 12,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia" D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/gerador.v 
+# -- Compiling module gerador
+# 
+# Top level modules:
+# 	gerador
+# End time: 20:25:06 on Dec 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/divisor_de_frequencia {D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/divisor_de_frequencia/clock_divisor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:06 on Dec 12,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/divisor_de_frequencia" D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/divisor_de_frequencia/clock_divisor.v 
+# -- Compiling module clock_divisor
+# 
+# Top level modules:
+# 	clock_divisor
+# End time: 20:25:06 on Dec 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/comparador {D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/comparador/comparador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:06 on Dec 12,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/comparador" D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/comparador/comparador.v 
+# -- Compiling module comparador
+# 
+# Top level modules:
+# 	comparador
+# End time: 20:25:07 on Dec 12,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/db {D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/db/pll_27mhz_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:07 on Dec 12,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/db" D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/db/pll_27mhz_altpll.v 
+# -- Compiling module PLL_27MHz_altpll
+# 
+# Top level modules:
+# 	PLL_27MHz_altpll
+# End time: 20:25:07 on Dec 12,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/ZEDTCV_CyIII/TIE_block {D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/ZEDTCV_CyIII/TIE_block/Mux_Invert_TB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:07 on Dec 12,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/ZEDTCV_CyIII/TIE_block" D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/ZEDTCV_CyIII/TIE_block/Mux_Invert_TB.v 
+# ** Error: (vlog-7) Failed to open design unit file "D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/ZEDTCV_CyIII/TIE_block/Mux_Invert_TB.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 20:25:07 on Dec 12,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE2_115_run_msim_rtl_verilog.do line 18
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/ZEDTCV_CyIII/TIE_block {D:/VITOR/UFSC/Linse/inversor_de_frequ..."

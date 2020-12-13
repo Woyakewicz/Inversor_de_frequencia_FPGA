@@ -1,0 +1,119 @@
+module Switch_debouncer_all
+(
+	input clk,
+	input rst,
+	
+	input [17:0] SW,
+	
+	output [17:0] SW_debounced	
+);
+
+	Switch_debouncer Switch_debouncer_SW0
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[0]),
+		.SW_debounced(SW_debounced[0]));
+
+	Switch_debouncer Switch_debouncer_SW1
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[1]),
+		.SW_debounced(SW_debounced[1]));
+		
+	Switch_debouncer Switch_debouncer_SW2
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[2]),
+		.SW_debounced(SW_debounced[2]));
+	
+	Switch_debouncer Switch_debouncer_SW3
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[3]),
+		.SW_debounced(SW_debounced[3]));
+	
+	Switch_debouncer Switch_debouncer_SW4
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[4]),
+		.SW_debounced(SW_debounced[4]));
+	
+	Switch_debouncer Switch_debouncer_SW5
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[5]),
+		.SW_debounced(SW_debounced[5]));
+	
+	Switch_debouncer Switch_debouncer_SW6
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[6]),
+		.SW_debounced(SW_debounced[6]));
+
+	Switch_debouncer Switch_debouncer_SW7
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[7]),
+		.SW_debounced(SW_debounced[7]));
+
+	Switch_debouncer Switch_debouncer_SW8
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[8]),
+		.SW_debounced(SW_debounced[8]));
+		
+	Switch_debouncer Switch_debouncer_SW9
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[9]),
+		.SW_debounced(SW_debounced[9]));
+	
+	Switch_debouncer Switch_debouncer_SW10
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[10]),
+		.SW_debounced(SW_debounced[10]));
+	
+	Switch_debouncer Switch_debouncer_SW11
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[11]),
+		.SW_debounced(SW_debounced[11]));
+	
+	Switch_debouncer Switch_debouncer_SW12
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[12]),
+		.SW_debounced(SW_debounced[12]));
+	
+	Switch_debouncer Switch_debouncer_SW13
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[13]),
+		.SW_debounced(SW_debounced[13]));
+
+	Switch_debouncer Switch_debouncer_SW14
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[14]),
+		.SW_debounced(SW_debounced[14]));
+
+	Switch_debouncer Switch_debouncer_SW15
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[15]),
+		.SW_debounced(SW_debounced[15]));
+		
+	Switch_debouncer Switch_debouncer_SW16
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[16]),
+		.SW_debounced(SW_debounced[16]));
+	
+	Switch_debouncer Switch_debouncer_SW17
+	(	.clk(clk),
+		.rst(rst),
+		.SW(SW[17]),
+		.SW_debounced(SW_debounced[17]));
+		
+endmodule 

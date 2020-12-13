@@ -1,0 +1,257 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/simulation/modelsim
+vclock_divisor
+Z1 !s110 1607816422
+!i10b 1
+!s100 `GUV=RKL?EndTV6Pke81>2
+IF=;cZhWN]WO`@TUC9DAm=2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1564522918
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/divisor_de_frequencia/clock_divisor.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/divisor_de_frequencia/clock_divisor.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1607816422.000000
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/divisor_de_frequencia/clock_divisor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/divisor_de_frequencia|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/divisor_de_frequencia/clock_divisor.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/divisor_de_frequencia
+Z6 tCvgOpt 0
+vcomparador
+Z7 !s110 1607816423
+!i10b 1
+!s100 FI:FZllcdVcoeiE0Shcoo3
+I<0=3JP@eG2k@QMl:WMJB53
+R2
+R0
+w1567005582
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/comparador/comparador.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/comparador/comparador.v
+Z8 L0 39
+R3
+r1
+!s85 0
+31
+Z9 !s108 1607816423.000000
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/comparador/comparador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/comparador|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/comparador/comparador.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/comparador
+R6
+vcontrolador_PWM
+R7
+!i10b 1
+!s100 n8C=GfXnzMDIM[elgXhJY3
+IJ^L?VU3IB6];5R`jI;ENJ0
+R2
+R0
+w1567428946
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top/controlador_PWM.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top/controlador_PWM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top/controlador_PWM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top/controlador_PWM.v|
+!i113 1
+R5
+Z10 !s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top
+R6
+ncontrolador_@p@w@m
+vcontrolador_PWM_tb
+R7
+!i10b 1
+!s100 Tb17GcjVjW>_T<Jof?kad3
+Iibc070O01E2a1>D3W@fFE1
+R2
+R0
+w1607816397
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top/controlador_PWM_tb.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top/controlador_PWM_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top/controlador_PWM_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/top/controlador_PWM_tb.v|
+!i113 1
+R5
+R10
+R6
+ncontrolador_@p@w@m_tb
+vgerador
+R1
+!i10b 1
+!s100 T?VEjEGNhA]]`^1eP8G9^3
+IfA8BLJfZ@N>OXP=VWTXY73
+R2
+R0
+w1566844544
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/gerador.v|
+!i113 1
+R5
+Z11 !s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia
+R6
+vPLL_27MHz
+R1
+!i10b 1
+!s100 aWb0QFAC7d6G:a8Ab@h2b1
+I=d>33g3RCJm=jU[GZmCRZ0
+R2
+R0
+w1566844830
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/PLL_27MHz.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/PLL_27MHz.v
+R8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/PLL_27MHz.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/PLL_27MHz.v|
+!i113 1
+R5
+R11
+R6
+n@p@l@l_27@m@hz
+vPLL_27MHz_altpll
+R7
+!i10b 1
+!s100 nk;XkzbJjQaeh?_N?BZ]W3
+ILjn2>^X``R<KM_;JQ?gYR2
+R2
+R0
+w1566848740
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/db/pll_27mhz_altpll.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/db/pll_27mhz_altpll.v
+L0 30
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/db/pll_27mhz_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/db|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/db/pll_27mhz_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/db
+R6
+n@p@l@l_27@m@hz_altpll
+vportadora
+!s110 1607816421
+!i10b 1
+!s100 i1IQRf:F^?O8g3J=Aojka3
+IOYIb8Ra8_LManQT8M9Dk>2
+R2
+R0
+w1566997572
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/portadora.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/portadora.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1607816421.000000
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/portadora.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/portadora.v|
+!i113 1
+R5
+Z12 !s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files
+R6
+vPWM
+R1
+!i10b 1
+!s100 9_nlhY9ZY09gPU>]hh5J62
+IK_>WLb27H:ZG<MCFDUSa21
+R2
+R0
+w1567005908
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/PWM.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/PWM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/PWM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/PWM.v|
+!i113 1
+R5
+R12
+R6
+n@p@w@m
+vreset_init_blk
+R1
+!i10b 1
+!s100 Oi_BaoFGJdDiLnTD=1C9E1
+IWV3c9B^`MHZi9m^JESgTl0
+R2
+R0
+w1566996942
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/reset/reset_init_blk.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/reset/reset_init_blk.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/reset/reset_init_blk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/reset|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/reset/reset_init_blk.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/reset
+R6
+vsenoid
+R1
+!i10b 1
+!s100 KK4WeLJ^k4TADkCJX4bRD3
+I9K@3UYzbB]hz1XPeKQJB@3
+R2
+R0
+w1566995856
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v
+R8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia|D:/VITOR/UFSC/Linse/inversor_de_frequencia/PWM/files/gerador_de_referencia/senoid.v|
+!i113 1
+R5
+R11
+R6

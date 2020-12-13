@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Aug 28 13:38:07 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : gerador
+Top-level Entity Name : gerador
+Family : Cyclone IV E
+Total logic elements : 42
+    Total combinational functions : 42
+    Dedicated logic registers : 23
+Total registers : 23
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 6,144
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

@@ -1,0 +1,6 @@
+module portadora #(parameter
+						)
+	(
+		input clk,
+		
+		input

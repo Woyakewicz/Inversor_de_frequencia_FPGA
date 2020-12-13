@@ -1,0 +1,11 @@
+module controlador_PWM #(
+									)
+									
+	(
+		input clk_50,
+		
+		output 
+	);
+	
+	
+	

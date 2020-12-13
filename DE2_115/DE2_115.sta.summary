@@ -1,0 +1,137 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'controlador_PWM:controlador_PWM|gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -1.762
+TNS   : -9.773
+
+Type  : Slow 1200mV 85C Model Setup 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.786
+TNS   : -0.786
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -0.271
+TNS   : -0.271
+
+Type  : Slow 1200mV 85C Model Hold 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.102
+TNS   : -0.102
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'controlador_PWM:controlador_PWM|gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : 0.408
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -4.038
+TNS   : -56.532
+
+Type  : Slow 1200mV 85C Model Removal 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.701
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlador_PWM:controlador_PWM|gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -1.285
+TNS   : -11.565
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.557
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 18.228
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'controlador_PWM:controlador_PWM|gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -1.494
+TNS   : -7.880
+
+Type  : Slow 1200mV 0C Model Setup 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.599
+TNS   : -0.599
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -0.193
+TNS   : -0.193
+
+Type  : Slow 1200mV 0C Model Hold 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.216
+TNS   : -0.216
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'controlador_PWM:controlador_PWM|gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.484
+TNS   : -48.776
+
+Type  : Slow 1200mV 0C Model Removal 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.246
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlador_PWM:controlador_PWM|gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -1.285
+TNS   : -11.565
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.562
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 18.228
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.549
+TNS   : -0.549
+
+Type  : Fast 1200mV 0C Model Setup 'controlador_PWM:controlador_PWM|gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -0.346
+TNS   : -0.718
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : 0.283
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'controlador_PWM:controlador_PWM|gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.834
+TNS   : -25.676
+
+Type  : Fast 1200mV 0C Model Removal 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.934
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlador_PWM:controlador_PWM|gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.202
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlador_PWM|senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 18.298
+TNS   : 0.000
+
+------------------------------------------------------------

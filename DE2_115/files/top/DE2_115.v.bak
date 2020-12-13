@@ -1,0 +1,400 @@
+module DE2_115 
+(
+	/******* clock input *******/
+	input CLOCK_50,
+	
+	/****** Switches ******/
+	input [17:0] SW,
+	
+	/****** Switches ******/
+	output [17:0] LEDR,
+
+	/**** GPIO ****/
+	output [12:0] GPIO 
+	
+//	/******** Audio-Port WB8731LS ********/
+//	input 	AUD_ADCDAT,
+//	inout 	AUD_ADCLRCK,
+//	inout 	AUD_BCLK,	
+//	output 	AUD_DACDAT,	
+//	inout 	AUD_DACLRCK,
+//	output 	AUD_XCK,	
+//
+//	/******* I2C for Audio Tv-Decoder *******/
+//	output 	I2C_SCLK,
+//	inout 	I2C_SDAT
+);
+	
+	wire clk_50 = CLOCK_50;
+	
+	/****** PLL_200M e 20M Hz  ******/ 
+	wire clk_20;
+	wire clk_200;
+	PLL_200 PLL_200
+	(
+		.inclk0(clk_50),
+		.c0(clk_20),
+		.c1(clk_200)
+	);
+	
+	/********* Debouncer for switches **********/
+	wire rst; // From Reset_init_blk
+	wire [17:0] SW_debounced; 
+	
+	Switch_debouncer_all Switch_debouncer_all
+	(
+		.clk(clk_20),
+		.rst(rst),
+		
+		.SW(SW),
+		
+		.SW_debounced(SW_debounced)	
+	);
+	
+	/****** Initial Reset ******/
+	wire rst_initial_50;
+	reset_init_blk reset_init_blk_50
+	(
+		.clk(clk_50),
+		
+		.rst_out(rst_initial_50)
+	);
+	
+	assign rst = rst_initial_50 || SW_debounced[0];
+	
+	/********** REF_1 **********/
+	/****** PLL_111M Hz  ******/ 
+	wire clk_111; // frequency: 111.428571 MHz
+	PLL1 PLL50to111MHz
+	(
+		.inclk0(clk_50),
+		.c0(clk_111)
+	);
+	
+	/******* Virtual change on ref_1 period *******/
+	wire [13:0] ref_1_period;
+	is_system_ref1 is_system_ref1 (
+		.probe(ref_1_period),  //  probes.probe
+		.source(ref_1_period)  // sources.source
+	);
+	
+	/****** Test ******/
+	wire [15:0] ref_1_period_aux = SW_debounced[12] ? (SW_debounced[13] ? 14348 : 13513 ) :
+				ref_1_period ;
+	
+	/******* Ref_1 Generation *******/
+	wire ref_1; // exacly value = 13928,571375
+	clock_divisor #(
+		.LOG_MIN(14)
+//		.RATE_DIVISOR(13928)) clock_divisor_ref_1
+		) clock_divisor_ref_1
+	(
+		.clk_in(clk_111),
+		.rst(rst),
+		
+//		.rate_divisor(14'd13928),
+		.rate_divisor(ref_1_period_aux),
+
+		.clk_out(ref_1)
+	);
+
+	
+	/********** REF_2 **********/
+	/****** PLL_164M Hz  ******/ 	
+	wire clk_164; // frequency: 164.285714 MHz
+	PLL2 PLL50to167MHz
+	(
+		.inclk0(clk_50),
+		.c0(clk_164)
+	);
+	
+	/******* Virtual change on ref_2 period *******/
+	wire [15:0] ref_2_period;
+	In_system_SEC (
+		.probe(ref_2_period),  //  probes.probe
+		.source(ref_2_period)  // sources.source
+	);
+	
+	/****** Test ******/
+	wire [15:0] ref_2_period_aux = SW_debounced[14] ? (SW_debounced[15] ? 21154 : 19923 ) :
+				ref_2_period ;
+	
+	/******* Ref_2 Generation *******/
+	wire ref_2;	// exacly value = 20535,71425
+	clock_divisor #(
+		.LOG_MIN(16)
+//		.RATE_DIVISOR(20530)) clock_divisor_ref_2
+		) clock_divisor_ref_2
+	(
+		.clk_in(clk_164),
+		.rst(rst),		
+		
+//		.rate_divisor(16'd20530),
+//		.rate_divisor(ref_2_period),
+		.rate_divisor(ref_2_period_aux),
+		
+		.clk_out(ref_2)
+	);
+		
+	
+	/********** ZL30409 chip - vide datasheet **********/
+	wire holdover_out, lock_out;
+	wire C16o, F16o, F0o;
+	wire [47:0]	debug;
+	wire virtual_ref 	 = debug[0];
+	wire TIE_done 	 	 = debug[1];
+	wire [3:0] TIE_ctrl	 = debug[5:2];
+	wire enb_TIE		 = debug[5];
+	wire [1:0] DPLL_ctrl = debug[7:6];
+	wire change_polarity_ref2_keep = debug[9];
+	wire SOFT_TRANS = debug[8];
+	wire ref_1_tie = debug[11];
+	wire ref_2_tie = debug[10];
+	wire [2:0] SM_VIR = debug[16:14];
+//	wire [2:0] SM_FLOCK = debug[16:14];
+//	wire RSEL_reg			= debug[18];
+	wire phase_invert_reg = debug[18];
+//	wire change_polarity	= debug[18];
+	wire RSEL_change_reg	= debug[17];
+	wire ref_VIR_reg = debug[19]; //na verdade (vir_signal)
+	wire LOCK;
+//	wire flock_stb_sync			= debug[37];
+	
+	wire counter_nLOCK_stb = debug[40];
+	wire flock_stb_sync = debug[39];
+	wire done_trans_ref = debug[38];
+	wire flock_stb_sync_all = debug[37];
+	
+	wire [5:0] F0o_width = debug[46:41];
+	
+	wire stb_filter_20 			= debug[36];
+//	wire [31:0] filtered_error	= {{10{debug[38]}}, debug[38:17]};
+//	wire [15:0] debug_data = debug[32:17];
+//	wire change_polarity = debug[16];
+	wire [15:0] phase_error		= debug[35:20];
+	ZL30409_top ZL30409_top 
+	(
+		.clk_20(clk_20),
+		.clk_200(clk_200),
+		.RST(rst),
+//		.rst_FREE_RUN(1'b0),
+		.rst_FLOCK(1'b0),
+//		.rst_FREE_RUN(SW[4]),
+//		.rst_FLOCK(SW[3]),
+		.TCLR(SW_debounced[1]),	
+		.PRI(ref_1),
+		.SEC(ref_2),
+		.RSEL(SW_debounced[17]),//SW[1]),
+		.PCCi(SW_debounced[16]),
+		.MS1(SW_debounced[3]),//SW[3]),
+		.MS2(SW_debounced[4]),
+//		.MS1(1'b0),//SW[3]),
+//		.MS2(1'b0),
+//		.FLOCK(1'b0),//SW[5]),
+		.FLOCK(SW_debounced[2]),
+		.lock_in(1'b0),
+		.LOCK_enb(SW_debounced[8]),
+		.HOLDOVER(holdover_out),
+		.LOCK(lock_out),
+		.C16o(C16o),
+		.F16o(F16o),
+		.F0o(F0o),
+		
+		.debug(debug)
+	);
+	
+//	/******* Detect width F0o out of bounds *******/
+//	reg F0o_reg;
+//	always @(posedge clk_200)
+//		F0o_reg <= F0o;
+//		
+//	wire F0o_posedge = F0o && ~F0o_reg;
+//	wire F0o_negedge = ~F0o && F0o_reg;
+//	
+//	reg F0o_width_stb;
+//	reg enb_count;
+//	always @(posedge clk_200)
+//		if (rst)
+//			enb_count <= 0;
+//		else
+//		begin
+//			if (F0o_posedge)
+//			begin
+//				F0o_width_stb <= 0;
+//				enb_count <= 0;
+//			end else if (F0o_negedge)
+//			begin
+//				F0o_width_stb <= 1;
+//				enb_count <= 1;
+//			end
+//		end
+//	
+//	reg [5:0] counter_width_F0o;
+//	always @(posedge clk_200)
+//		if (rst)
+//			counter_width_F0o <= 0;
+//		else
+//			if (enb_count)
+//				counter_width_F0o <= counter_width_F0o + 6'd1;
+//			else
+//				counter_width_F0o <= 0;
+//				 
+//	
+//	wire width_lower = (counter_width_F0o < F0o_MIN_WIDTH);
+//	wire width_higher = (counter_width_F0o > F0o_MAX_WIDTH);
+//	
+//	localparam F0o_MIN_WIDTH = 46;
+//	localparam F0o_MAX_WIDTH = 51;
+//	
+//	reg F0o_width_out_of_bounds_stb;
+//	always @(posedge clk_200)
+//		if (rst)
+//			F0o_width_out_of_bounds_stb <= 0;
+//		else 
+//			if (F0o_width_stb)
+//				F0o_width_out_of_bounds_stb <= (width_lower || width_higher);
+//			else
+//				F0o_width_out_of_bounds_stb <= 0;
+				
+	/***** Change flags *****/
+	reg [2:0] SM_control;	
+	reg [2:0] SM_control_reg;
+	reg SM_change;
+	always @(posedge clk_20)
+	begin
+		SM_control = debug[4:2];
+		SM_control_reg <= SM_control;
+		SM_change <= ~(SM_control_reg == SM_control);
+	end
+	
+//	wire SM_change = ~(SM_control_reg == SM_control);
+	
+				
+//	reg change_polarity_reg;
+//	always @(posedge clk_200)
+//		if (rst)
+//			change_polarity_reg <= 0;
+//		else if (change_polarity)
+//			change_polarity_reg <= 1;
+//		else if (SW[1])
+//			change_polarity_reg <= 0;
+	
+
+	wire FREE_RUN = SW_debounced[4] && ~SW_debounced[3];  
+
+	
+//	assign GPIO = {clk_200, 4'd0, change_polarity, FREE_RUN, lock_out, C16o, F16o, F0o, ref_2, ref_1};
+//	assign GPIO = {clk_200, flock_stb_sync, SM_VIR[2:0], SM_change, ref_VIR_reg, lock_out, change_polarity, F16o, F0o, ref_2, ref_1};
+//	assign GPIO = {clk_200, flock_stb_sync_all, counter_nLOCK_stb, flock_stb_sync, //F0o_width_stb,F0o_width_out_of_bounds_stb,
+//							done_trans_ref, SM_change, ref_VIR_reg, lock_out, 
+//									change_polarity, F16o, F0o, ref_2, ref_1};				//certo
+//	assign GPIO = {clk_200, 1'd0, SM_VIR, SM_change, ref_VIR_reg, lock_out, C16o, F16o, F0o, ref_2, ref_1};
+//	assign GPIO = {clk_200, 5'd0, change_polarity_ref2_keep, enb_TIE, SM_change, TIE_done, virtual_ref, ref_2, ref_1};
+//	assign GPIO = {clk_200, SM_VIR, TIE_ctrl[0], enb_TIE, SM_change,
+//					TIE_done, virtual_ref, RSEL_reg, RSEL_change_reg, ref_2, ref_1};
+//	assign GPIO = {clk_200, SM_VIR, TIE_ctrl[0], enb_TIE, 
+//							SM_change, TIE_done, virtual_ref, TIE_ctrl[2], TIE_ctrl[1], ref_2, ref_1};
+//	assign GPIO = {clk_200, SM_VIR, change_polarity_ref2_keep, enb_TIE, 
+//							SM_change, TIE_done, virtual_ref, ref_2_tie, ref_1_tie, ref_2, ref_1};
+// 												VITOR										//
+//	assign GPIO = {clk_200, counter_nLOCK_stb, flock_stb_sync, done_trans_ref, 
+//							stb_filter_20, flock_stb_sync_all, change_polarity, lock_out, 
+//									change_polarity, F16o, F0o, ref_2, ref_1};			//DPLL debug
+//	assign GPIO = {clk_200, ref_VIR_reg, phase_invert_reg, RSEL_change_reg, 
+//							SM_VIR[2], SM_VIR[1], SM_VIR[0], change_polarity_ref2_keep, 
+//									SOFT_TRANS, F16o, F0o, ref_2, ref_1};					//TIE debug
+//	assign GPIO = {clk_200, clk_20, F0o_posedge, SW_debounced[8], 
+//							F0o_width[2], F0o_width[1], F0o_width[0], F0o_width_adr[0], 
+//									F0o_width_adr[1], F16o, F0o, ref_2, ref_1};					//Teste da ram F0o
+	assign GPIO = {clk_200, clk_20, RSEL_change2, RSEL_change_fix, 
+							stb_filter_20, M16_addr[0], SW_debounced[8], F0o_width_adr[0], 
+									F0o_width_adr[1], F16o, F0o, ref_2, ref_1};					//Teste da ram M16
+//													VITOR										//
+	
+//	assign GPIO = {ref_1, lock_out, F0o, change_polarity, C16o};
+	
+	assign LEDR = {SM_control,5'd0, DPLL_ctrl, 4'd0, TIE_ctrl};
+	
+	
+	/**************** DEBUG - In-System Memory *************/
+	reg RSEL_reg2;
+	always @(posedge clk_20)
+		RSEL_reg2 <= SW[17];
+	wire RSEL_change2 = RSEL_reg2 ^ SW[17];
+	
+	reg RSEL_change_fix;
+	reg [12:0] M16_addr;
+	always @(posedge clk_20)
+		if (rst)
+		begin
+			M16_addr <= 0;
+			RSEL_change_fix <= 0;
+		end else
+			if (RSEL_change2)
+				RSEL_change_fix <= 1;
+			else if (RSEL_change_fix && stb_filter_20)
+			begin
+				if (M16_addr == 13'd8191)
+				begin
+					RSEL_change_fix <= 0;
+					M16_addr <= 0;
+				end else
+				begin
+					M16_addr <= M16_addr + 13'd1;
+				end
+			end
+			
+	
+	RAM_InSystem RAM_InSystem_16b
+	(
+		.address(M16_addr),
+		.clock(clk_20),
+		.data(phase_error),
+		.wren(stb_filter_20 && RSEL_change_fix || SW_debounced[8]),
+		.q()
+	);
+	
+	/**************** DEBUG - In-System Memory F0o width *************/
+	
+	reg F0o_reg;
+	reg [5:0] F0o_width_reg;
+	always @(posedge clk_200)
+	begin
+		F0o_reg <= F0o;
+		F0o_width_reg <= F0o_width;
+	end
+	
+	wire F0o_posedge = F0o && ~F0o_reg;
+	reg [12:0] F0o_width_adr;
+	always @(posedge clk_200)
+		if (rst)
+			F0o_width_adr <= 0;
+		else
+			if (F0o_posedge && SW_debounced[8])				
+				F0o_width_adr <= F0o_width_adr + 12'd1;
+			
+	
+	RAM_TESTE RAM_InSystem_width_F0o 
+	(
+		.address(F0o_width_adr),
+		.clock(clk_200),
+		.data(F0o_width_reg),
+		.wren(F0o_posedge || SW_debounced[8]),
+		.q()
+	);
+	
+	
+//	RAM_InSystem RAM_InSystem_debug
+//	(
+//		.address(M16_addr),
+//		.clock(clk_20),
+//		.data(debug_data),
+//		.wren(stb_filter_20 && RSEL_change_fix),
+//		.q()
+//	);
+	
+	/*******************************************************/
+	
+	
+	
+endmodule 

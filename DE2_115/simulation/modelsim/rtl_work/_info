@@ -1,0 +1,212 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/simulation/modelsim
+vclock_divisor
+Z1 !s110 1607815506
+!i10b 1
+!s100 `GUV=RKL?EndTV6Pke81>2
+InGX_[^Wofn<:df73hCGLY1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1564522918
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/divisor_de_frequencia/clock_divisor.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/divisor_de_frequencia/clock_divisor.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1607815506.000000
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/divisor_de_frequencia/clock_divisor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/divisor_de_frequencia|D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/divisor_de_frequencia/clock_divisor.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/divisor_de_frequencia
+Z6 tCvgOpt 0
+vcomparador
+Z7 !s110 1607815507
+!i10b 1
+!s100 FI:FZllcdVcoeiE0Shcoo3
+I4FWKXD:0mVB=dMao6EBn21
+R2
+R0
+w1567005582
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/comparador/comparador.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/comparador/comparador.v
+Z8 L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/comparador/comparador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/comparador|D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/comparador/comparador.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/comparador
+R6
+vcontrolador_PWM
+Z9 !s110 1607815505
+!i10b 1
+!s100 ;]<4ian;9L@hOC_d`;OoZ3
+IQ>amM<Hb5IQABl]noCA=@2
+R2
+R0
+w1567447412
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/top/controlador_PWM.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/top/controlador_PWM.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z10 !s108 1607815505.000000
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/top/controlador_PWM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/top|D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/top/controlador_PWM.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/top
+R6
+ncontrolador_@p@w@m
+vgerador
+R1
+!i10b 1
+!s100 T?VEjEGNhA]]`^1eP8G9^3
+ISSYL9=`z2eNUY9m[`QGNi3
+R2
+R0
+w1566844544
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/gerador.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/gerador.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/gerador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia|D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/gerador.v|
+!i113 1
+R5
+Z11 !s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia
+R6
+vPLL_27MHz
+R1
+!i10b 1
+!s100 aWb0QFAC7d6G:a8Ab@h2b1
+IVXXQ]CQ;6enPZG2^6O9GX3
+R2
+R0
+w1566844830
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/PLL_27MHz.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/PLL_27MHz.v
+R8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/PLL_27MHz.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia|D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/PLL_27MHz.v|
+!i113 1
+R5
+R11
+R6
+n@p@l@l_27@m@hz
+vPLL_27MHz_altpll
+R7
+!i10b 1
+!s100 nk;XkzbJjQaeh?_N?BZ]W3
+IUjK>8AIZ?dUOfk63e9K6d2
+R2
+R0
+w1567431282
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/db/pll_27mhz_altpll.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/db/pll_27mhz_altpll.v
+L0 30
+R3
+r1
+!s85 0
+31
+!s108 1607815507.000000
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/db/pll_27mhz_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/db|D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/db/pll_27mhz_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/db
+R6
+n@p@l@l_27@m@hz_altpll
+vportadora
+R9
+!i10b 1
+!s100 i1IQRf:F^?O8g3J=Aojka3
+I96_FP8B4c@?g8Xd;hG9:c0
+R2
+R0
+w1566997572
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/portadora.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/portadora.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/portadora.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files|D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/portadora.v|
+!i113 1
+R5
+Z12 !s92 -vlog01compat -work work +incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files
+R6
+vPWM
+R9
+!i10b 1
+!s100 9_nlhY9ZY09gPU>]hh5J62
+IV69[KBCMDX=>C703_F83n1
+R2
+R0
+w1567005908
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/PWM.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/PWM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/PWM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files|D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/PWM.v|
+!i113 1
+R5
+R12
+R6
+n@p@w@m
+vsenoid
+R1
+!i10b 1
+!s100 KK4WeLJ^k4TADkCJX4bRD3
+Ie349ccXPHboHaSSDQ_oJ43
+R2
+R0
+w1566995856
+8D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/senoid.v
+FD:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/senoid.v
+R8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/senoid.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia|D:/VITOR/UFSC/Linse/inversor_de_frequencia/DE2_115/files/gerador_de_referencia/senoid.v|
+!i113 1
+R5
+R11
+R6

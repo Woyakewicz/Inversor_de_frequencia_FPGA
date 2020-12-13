@@ -1,0 +1,137 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -1.783
+TNS   : -9.850
+
+Type  : Slow 1200mV 85C Model Setup 'clk_50'
+Slack : -0.781
+TNS   : -0.781
+
+Type  : Slow 1200mV 85C Model Setup 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.712
+TNS   : -0.712
+
+Type  : Slow 1200mV 85C Model Hold 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.174
+TNS   : -0.174
+
+Type  : Slow 1200mV 85C Model Hold 'clk_50'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.947
+TNS   : -55.258
+
+Type  : Slow 1200mV 85C Model Removal 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.613
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -1.285
+TNS   : -11.565
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50'
+Slack : 9.631
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 18.227
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -1.515
+TNS   : -7.972
+
+Type  : Slow 1200mV 0C Model Setup 'clk_50'
+Slack : -0.643
+TNS   : -0.643
+
+Type  : Slow 1200mV 0C Model Setup 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.531
+TNS   : -0.531
+
+Type  : Slow 1200mV 0C Model Hold 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.280
+TNS   : -0.280
+
+Type  : Slow 1200mV 0C Model Hold 'clk_50'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : 0.364
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.403
+TNS   : -47.642
+
+Type  : Slow 1200mV 0C Model Removal 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.171
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -1.285
+TNS   : -11.565
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : 9.648
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 18.231
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.445
+TNS   : -0.445
+
+Type  : Fast 1200mV 0C Model Setup 'gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -0.358
+TNS   : -0.788
+
+Type  : Fast 1200mV 0C Model Setup 'clk_50'
+Slack : 0.103
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.100
+TNS   : -0.100
+
+Type  : Fast 1200mV 0C Model Hold 'clk_50'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.784
+TNS   : -24.976
+
+Type  : Fast 1200mV 0C Model Removal 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.888
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'gerador:senoid_60hz|clock_divisor:divisor|clk_out_reg'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : 9.373
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'senoid_60hz|PLL27MHz|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 18.300
+TNS   : 0.000
+
+------------------------------------------------------------
